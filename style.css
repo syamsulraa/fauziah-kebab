@@ -1,0 +1,445 @@
+/* =========================================
+   FAUZIAH KEBAB - CONSISTENT STYLE THEME
+========================================= */
+
+:root {
+  --primary: #8b1e1e;
+  --secondary: #d4a017;
+  --dark: #4a1313;
+  --light: #fff8f0;
+  --text: #5a3b2e;
+  --white: #ffffff;
+  --shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo-text {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 32px;
+  color: var(--secondary) !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.custom-navbar {
+  background-color: var(--primary);
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  transition: 0.3s ease;
+}
+
+.nav-link {
+  color: var(--white) !important;
+  font-weight: 500;
+  margin: 0 12px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--secondary) !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: var(--secondary);
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.btn-login {
+  border: 2px solid var(--secondary);
+  border-radius: 30px;
+  color: var(--secondary);
+  padding: 8px 18px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  background-color: transparent;
+}
+
+.btn-login:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section {
+  height: 90vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+    url('../images/logo-kebab.jpeg') center/cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-section h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+.section-padding {
+  padding: 90px 0;
+}
+
+section h2 {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   MENU HEADER
+========================================= */
+
+.menu-header {
+  height: 85vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+    url('../images/menu.jpeg') center/cover no-repeat;
+  background-attachment: fixed;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.menu-subtitle {
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* =========================================
+   CARD MENU
+========================================= */
+
+.menu-card,
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  transition: 0.35s ease;
+}
+
+.menu-card:hover,
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.25);
+}
+
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.card-text {
+  color: #777;
+  font-size: 15px;
+}
+
+.menu-card ul li {
+  margin-bottom: 6px;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.menu-btn,
+.btn-primary,
+form .btn {
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--dark)
+  );
+  color: var(--white);
+  border: none;
+  border-radius: 40px;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 18px rgba(139,30,30,0.3);
+}
+
+.menu-btn:hover,
+.btn-primary:hover,
+form .btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(
+    135deg,
+    var(--secondary),
+    #f2c94c
+  );
+  color: var(--primary);
+}
+
+/* =========================================
+   IMAGE STYLE
+========================================= */
+
+.kopi-img,
+.menu-img,
+.service-img,
+.cerita-img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  transition: 0.3s ease;
+}
+
+.kopi-img:hover,
+.menu-img:hover,
+.service-img:hover,
+.cerita-img:hover {
+  transform: scale(1.03);
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+form .form-control {
+  border-radius: 12px;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  transition: 0.3s ease;
+}
+
+form .form-control:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(212,160,23,0.2);
+}
+
+/* =========================================
+   MODAL
+========================================= */
+
+.modal-content {
+  border-radius: 22px;
+  border: none;
+  padding: 20px;
+}
+
+.modal-content h5,
+.modal-content h4 {
+  color: var(--primary);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+footer .logo-text {
+  color: var(--secondary) !important;
+}
+
+footer small {
+  color: #f5d68a;
+}
+
+/* =========================================
+   MEMBER SECTION
+========================================= */
+
+.member-header {
+  height: 85vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+    url('../images/menu.jpeg') center/cover no-repeat;
+  background-attachment: fixed;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-parallax {
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+    url('../images/menu.jpeg') center/cover no-repeat;
+  background-attachment: fixed;
+  color: var(--white);
+  padding: 120px 0;
+}
+
+.contact-title {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.contact-subtitle {
+  font-size: 18px;
+}
+
+/* =========================================
+   LOGIN & AUTH
+========================================= */
+
+.auth-section,
+.auth-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+    url('../images/menu.jpeg') center/cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-wrapper,
+.auth-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 22px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+
+.auth-wrapper h2,
+.auth-card h2 {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.btn-auth,
+.auth-btn {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  width: 100%;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-auth:hover,
+.auth-btn:hover {
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section,
+.card,
+.menu-card {
+  animation: fadeUp 0.8s ease;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .hero-section h1,
+  .menu-title,
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .hero-section p,
+  .menu-subtitle,
+  .contact-subtitle {
+    font-size: 16px;
+  }
+
+  .menu-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-text {
+    font-size: 26px;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+}
