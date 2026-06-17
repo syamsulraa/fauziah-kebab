@@ -140,7 +140,7 @@ section h2 {
   height: 85vh;
   background:
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
-    url('../images/menu.jpeg') center/cover no-repeat;
+    url('menu.jpeg') center/cover no-repeat;
   background-attachment: fixed;
   color: var(--white);
   display: flex;
