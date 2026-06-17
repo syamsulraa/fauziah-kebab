@@ -311,7 +311,7 @@ footer small {
   height: 85vh;
   background:
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-    url('../images/menu.jpeg') center/cover no-repeat;
+    url('menu.jpeg') center/cover no-repeat;
   background-attachment: fixed;
   color: var(--white);
   display: flex;
@@ -327,7 +327,7 @@ footer small {
 .contact-parallax {
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
-    url('../images/menu.jpeg') center/cover no-repeat;
+    url('menu.jpeg') center/cover no-repeat;
   background-attachment: fixed;
   color: var(--white);
   padding: 120px 0;
